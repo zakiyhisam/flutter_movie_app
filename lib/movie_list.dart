@@ -20,10 +20,12 @@ class MovieList extends StatelessWidget {
     //title: Text(movie.title),
     content: 
     Container(
-      height: 320,
-      width: 350,
-      child: Row(
+      height: 330,
+      width: 380,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
       children: [
+        
         Container(
             decoration: BoxDecoration(
                 image: DecorationImage(
@@ -33,18 +35,10 @@ class MovieList extends StatelessWidget {
                 borderRadius: BorderRadius.circular(6)
             ),
             width: 200,
-            height: 300,
+            height: 280,
           ),
-        SizedBox(width: 20,),
-        Container(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
               Text(movie.title, style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
               Text('released: ' + movie.yearReleased)
-            ],
-          ),
-        )
       ],
     )),
     actions: [
