@@ -3,9 +3,12 @@ class MovieViewModel {
   final Movie ?movie;
   MovieViewModel({this.movie});
   String get title {
-    return this.movie!.title;
+    return movie!.title;
   }
   String get poster {
-    return this.movie!.posterUrl;
+    return movie!.posterUrl;
+  }
+  String get yearReleased {
+    return movie!.year;
   }
 }
